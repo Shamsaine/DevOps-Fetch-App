@@ -1,5 +1,15 @@
 #!/bin/bash
 
+LOG_FILE="/var/log/devopsfetch.log"
+
+# logging function
+log_message() {
+	echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" >> $LOG_FILE
+}
+
+# Example of logging usage
+log_message "Starting DevOps Fetch Service"
+
 # Function to display help
 show_help() {
   echo "Usage: $0 [OPTION]..."
@@ -77,4 +87,5 @@ while [[ "$#" -gt 0 ]]; do
   esac
   shift
 done
+
 
