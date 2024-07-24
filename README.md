@@ -41,13 +41,13 @@ chmod +x setup.sh setup2.sh
 #### Options
 
 - `-p, --port:` Display all active ports and services
-- `-p <port_number>:` Provide detailed information about a specific port
+    - `-p <port_number>:` Provide detailed information about a specific port
 - `-d, --docker:` List all Docker images and containers
-- `-d <container_name>:` Provide detailed information about a specific container
+    - `-d <container_name>:` Provide detailed information about a specific container
 - `-n, --nginx:` Display all Nginx domains and their ports
-- `-n <domain>:` Provide detailed configuration information for a specific domain
+    - `-n <domain>:` Provide detailed configuration information for a specific domain
 - `-u, --users:` List all users and their last login times
-- `-u <username>:` Provide detailed information about a specific user
+    - `-u <username>:` Provide detailed information about a specific user
 - `-t, --time:` Display activities within a specified time range
 - `-h, --help:` Display this help and exit
 
@@ -65,3 +65,6 @@ sudo systemctl start devopsfetch
 sudo systemctl status devopsfetch
 ```
 
+By following these steps, you'll have a fully functioning devopsfetch tool for server information retrieval and monitoring, complete with a systemd service for continuous operation and comprehensive documentation for easy usage and maintenance.
+
+©shamsaine
